@@ -18,8 +18,8 @@ function App() {
         }
 
         createNote(newNote)
-            .then((res) => {
-                setNotes([...notes, res])
+            .then((newNote) => {
+                setNotes(prevNotes => [...prevNotes, newNote])
                 resetForm()
             })
             .catch(err => console.error(err))
