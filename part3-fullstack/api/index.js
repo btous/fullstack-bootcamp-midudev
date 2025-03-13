@@ -64,7 +64,7 @@ app.delete('/api/notes/:id', (request, response) => {
 
 app.use((request, response) => {
   response.status(404).json({
-    error: 'No content found'
+    error: 'Nothing here'
   })
 })
 
