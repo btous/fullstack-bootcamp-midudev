@@ -1,7 +1,7 @@
-import notes from './notes.js'
+import notes from '../notes.js'
 import express from 'express'
 import cors from 'cors'
-import logger from './middlewares/logger.js'
+import logger from '../middlewares/logger.js'
 
 const app = express()
 
